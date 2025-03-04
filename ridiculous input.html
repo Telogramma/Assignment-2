@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Where's Waldo Verification</title>
+    <link rel="stylesheet" href="ridiculous input.css">
+</head>
+<body>
+    <div class="captcha-container">
+        <!-- Checkbox Section -->
+        <div class="checkbox-wrapper" id="checkboxWrapper">
+            <div class="checkbox" id="checkbox"></div>
+            <span>I'm not a robot</span>
+        </div>
+
+        <!-- Modal for Waldo verification -->
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <button class="close-button" id="closeModal">×</button>
+                <h2>Find Waldo to Verify</h2>
+                <p>Click on Waldo in the image below</p>
+
+                <!-- Waldo Image -->
+                <div class="waldo-container">
+                    <img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*7v_75ZGg1CTmWAw1rEgMHQ.jpeg"
+                        alt="Where's Waldo Scene" class="waldo-image" id="waldoImage">
+                    <div class="tooltip-container" id="tooltipContainer">
+                        <div class="targeting-box"></div>
+                    </div>
+                </div>
+                
+                <button class="verify-button" id="verifyButton">Verify</button>
+                <div class="message" id="message"></div>
+            </div>
+        </div>
+
+        <!-- Success Message (Good Job Page) -->
+<div class="good-job-page" id="goodJobPage">
+    <h1>Good Job!</h1>
+    <p class="big-text">But... you need to do a second verification 😈</p>
+    <button class="verify-again-button" id="verifyAgainButton">Verify Again</button>
+</div>
+
+
+    <script src="ridiculous script.js"></script>
+</body>
+</html>
